@@ -1,0 +1,580 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  @font-face { 
+    font-family: "titre"; src: url(ressources/polices/Saudagar.ttf);
+  }
+  @font-face { 
+    font-family: "texte"; src: url(ressources/polices/JonahAFYL-Light.ttf);
+  }
+
+/* Menu */
+ 
+#top_menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  font-family: "texte"; 
+
+}
+
+#top_menu li a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+  color: #fff;
+  transition: border-bottom,background-color 500ms;
+}
+
+#top_menu li a:hover{
+  border-bottom: 2px dashed #fff;
+  background-color: gray;
+  transition: border-bottom,background-color 500ms;
+}
+
+.lien-courant{
+  border-bottom: 2px solid black;
+}
+
+#nav{
+  background-color: #000;
+  position: sticky;
+  position: sticky;
+  top: 0px;
+
+}
+
+/* Page d'accueil */
+
+
+.navbar{
+  display: flex;
+  font-family: "texte";
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px ;
+}
+
+.navbar ul li{
+  font-family: "texte";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 10px #fff;
+}
+
+#home{
+  display: flex;
+  flex-direction: column;
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(ressources/Images/moi.jpg) no-repeat center center/cover;
+  height: 940px;
+  width: 100%;
+  z-index: -1;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 60px;
+  font-family: "titre";
+}
+
+/* Page à propos*/
+
+.container{
+  background-color: gray;
+}
+
+.block img{
+  float:left;
+  width: 20%;
+  height:auto;
+  margin: 10px;
+}
+
+.block {
+  background-color: #000;
+  margin: 100px 50px 75px 100px;
+  width: 80%;
+  height: 480px;
+}
+
+.T_apropos{
+  padding: 100px 10px;
+  font-family: "texte";
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #fff;
+}
+
+.boutons4{
+  display: block;
+  margin-left: 81%;
+
+
+}
+
+
+ /* Page contact */
+
+
+.page_contact{
+  background-color: gray;
+}
+
+ #contact{
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 0 50px 0;
+  height: 765px;
+  font-family: "texte";
+  text-shadow: 2px 2px 5px #fff;
+
+}
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  min-height: 40px;
+  font-family: "texte";
+}
+
+input[type=submit], input[type="reset"]{
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "texte";
+}
+
+input[type=submit]:hover, input[type="reset"]:hover{
+background-color: #fff;
+color: black;
+font-family: "texte";
+
+
+}
+
+
+/* Page créations */
+
+
+  #T1{
+    color: #fff;
+    font-family: "titre";
+    font-size: 100px;
+    text-shadow: 2px 2px 5px #fff;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.90);
+    height: 200px;  
+    width: 100%;
+    border-style: dotted;
+    border-color: #fff;
+}   
+
+/* Partie graphisme sur la page créations*/
+
+#graphisme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#Tgraphisme{
+  color: #000;
+  font-family: "titre";
+  font-size: 40px;
+  text-shadow: 2px 2px 5px #fff;
+  position: absolute;
+}
+
+#fondgraphisme{
+  height: 500px;
+  width: 100%;
+  opacity: 0.5;
+}
+
+
+/* Partie ecriture sur la page créations*/
+
+#ecriture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#Tecriture{
+    color: #000;
+    font-family: "titre";
+    font-size: 40px;
+    text-shadow: 2px 2px 5px #fff;
+    position: absolute;
+}
+
+#fondecriture{
+    height: 500px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#cadre_ecriture{
+     width: 100%;
+     height: auto;
+  }
+
+
+  /* Liens */
+
+#liens{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+#liens:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* page écriture */
+
+.creations_ecrites{  
+  overflow-x: hidden; 
+  background-image: url(ressources/Images/cadre_ecriture.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+
+}
+
+.descrption_histoire{
+  margin-left: 45%;
+  margin-right: 30%;
+  margin-top: 15%;
+  float: right;
+  font-family: "texte";
+  color: #000;
+  text-shadow: 5px 5px 10px #000;
+}
+
+.bouton3{
+  margin-left: 26%;
+  margin-top: 23%;
+  display: block;
+  position: 300px 20px;
+
+}
+
+
+/* Partie créations graphiques */
+
+#Titre_création_graphique{
+    color: #000;
+    font-family: "titre";
+    font-size: 100px;
+    text-shadow: 5px 5px 10px gray;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.90);
+    height: 200px;  
+    width: 100vw;
+    border-style: dotted;
+    border-color: #fff;
+}
+
+.corps{
+  margin:auto;
+  display:flex;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.one{
+  top: 250px;
+  font-family: "titre";
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+img{max-width:100%}
+		
+.caroussel_diapo input{
+  position:absolute;
+  left:-9999px;
+}
+    
+.caroussel_diapo{	
+  top: 400px;
+  text-align:center;
+  margin:0 auto;
+  
+}
+
+.contenu_carou {
+  width:500px;
+  height:332px;
+  perspective:4000px;
+  margin-left: 25%;
+}
+
+.caroussel{
+  transform-style:preserve-3d;
+  position:relative; 
+  width:500px;
+  height:332px;
+  transition:1s;
+}
+
+.caroussel img {
+	position:absolute;
+  margin: auto;
+  top:0;left:0;
+  outline:1px solid transparent;
+  backface-visibility:hidden;
+  transition:1s;
+}
+
+.caroussel img{
+  filter:blur(3px);opacity:.8
+}	
+.caroussel img:nth-child(1){
+  transform:translate3d(0,0,540px) scale(.8)
+}
+.caroussel img:nth-child(2){
+  transform:rotateY(45deg) translateZ(540px) scale(.8)
+}
+.caroussel img:nth-child(3){
+  transform:rotateY(90deg) translateZ(540px) scale(.8)
+}
+.caroussel img:nth-child(4){
+  transform:rotateY(135deg) translateZ(540px) scale(.8)
+}
+.caroussel img:nth-child(5){
+  transform:rotateY(180deg) translateZ(540px) scale(.8)
+}
+.caroussel img:nth-child(6){
+  transform:translate3d(0,0,540px) scale(.8)
+}
+.caroussel img:nth-child(7){
+  transform:rotateY(45deg) translateZ(540px) scale(.8)
+}
+.caroussel img:nth-child(8){
+  transform:rotateY(90deg) translateZ(540px) scale(.8)
+}
+
+.caroussel_diapo input[type=radio] + label {
+	cursor:pointer;
+  background: #403F3E;
+  display:inline-block;
+  width:20px;
+  border-radius:50%;
+  height:20px
+}
+	
+.caroussel_diapo input[type=radio]:checked + label{background:#141314}
+
+.caroussel_diapo label{background:#141314}
+
+.caroussel_diapo input[name="rotation"]:checked ~ .contenu_carou .caroussel img:nth-child(n){
+	filter:drop-shadow(12px 12px 7px hsla(0,0%,0%,.5))
+}	
+
+    /*gauche*/
+.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel{
+  transform:translateZ(-540px)
+}
+
+.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel{
+  transform:translateZ(-540px) rotateY(-45deg)
+}
+
+.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel{
+  transform:translateZ(-540px) rotateY(-90deg)
+}
+
+.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel{
+  transform:translateZ(-540px) rotateY(-135deg)
+}
+
+.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel{
+  transform:translateZ(-540px) rotateY(-180deg)
+}
+
+.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel{
+  transform:translateZ(-540px)
+}
+
+.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel{
+  transform:translateZ(-540px) rotateY(-45deg)
+}
+
+.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel{
+  transform:translateZ(-540px) rotateY(-90deg)}
+
+
+    /*droite*/
+.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel img:nth-child(1){
+  transform:translateZ(540px) scale(1);opacity:1
+}
+
+.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel img:nth-child(2){
+  transform:rotateY(45deg) translateZ(540px) scale(1);opacity:1
+}
+
+.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel img:nth-child(3){
+  transform:rotateY(90deg) translateZ(540px) scale(1);opacity:1
+}
+.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel img:nth-child(4){
+  transform:rotateY(135deg) translateZ(540px) scale(1);opacity:1
+}
+
+.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel img:nth-child(5){
+  transform:rotateY(180deg) translateZ(540px) scale(1);opacity:1
+}
+
+.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel img:nth-child(6){
+  transform:translateZ(540px) scale(1);opacity:1
+}
+
+.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel img:nth-child(7){
+  transform:rotateY(45deg) translateZ(540px) scale(1);opacity:1
+}
+
+.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel img:nth-child(8){
+  transform:rotateY(90deg) translateZ(540px) scale(1);opacity:1
+}
+
+.description_creations{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-family: "texte";
+  margin-top: 30px;
+  
+}
+
+.bieres{
+  margin:60px auto 150px auto;
+}
+
+.champignons{
+  margin: 0;
+  margin-top: 100px;
+}
+
+.colonne{
+  flex-direction: column;
+  
+}
+
+.magazine{
+  margin-top: 150px;
+}
+
+.magazine img{
+  margin: auto;
+  display: inline;
+  margin-left: 100px;
+}
+
+.magazine img:nth-child(2){
+  width: 15%;
+ 
+}
+
+.magazine img:nth-child(3){
+  width: 30%;
+}
+
+.magazine img:nth-child(4){
+  width: 30%;
+}
+
+.magazine img:nth-child(5){
+  width: 30%;
+}
+
+.magazine img:nth-child(6){
+  width: 30%;
+}
+
+.magazine img:nth-child(7){
+  width: 15%;
+}
+
+.agenda{
+  margin-top: 150px;
+}
+
+.agenda img{
+  margin: auto;
+  display: inline;
+  margin-left: 100px;
+}
+
+
+
+
+
+  
